@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="Test1_Project.1044f032-ed3a-4dfe-aa7a-c4cf81e8382e" Version="1.1" Language="en-US" Publisher="Company" />
+        <Identity Id="Test1_Project.1044f032-ed3a-4dfe-aa7a-c4cf81e8382e" Version="0.0.3" Language="en-US" Publisher="Company" />
         <DisplayName>Test1_Project</DisplayName>
         <Description xml:space="preserve">Example VSIX packae. 2</Description>
         <Preview>true</Preview>
@@ -19,6 +19,6 @@
     </Prerequisites>
     <Assets>
         <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
-        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="%CurrentProject%Template" d:TargetPath="|Test1_ProjectTemplate;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="Test1.ProjectTemplate" d:TargetPath="|Test1.ProjectTemplate;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
     </Assets>
 </PackageManifest>

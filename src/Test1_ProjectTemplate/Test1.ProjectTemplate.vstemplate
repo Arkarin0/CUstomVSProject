@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
   <TemplateData>
-    <Name>Test1_ProjectTemplate</Name>
-    <Description>Test1_ProjectTemplate</Description>
+    <Name>Test1 ProjectTemplate</Name>
+    <Description>Test1 ProjectTemplate</Description>
     <Icon>Test1_ProjectTemplate.ico</Icon>
     <ProjectType>CSharp</ProjectType>
     
@@ -13,7 +13,7 @@
 	  <CreateNewFolder>true</CreateNewFolder>
 
 	  <!--On the New Project Dialogbox-->
-    <DefaultName>Test1_ProjectTemplate</DefaultName>
+    <DefaultName>Test1 ProjectTemplate</DefaultName>
     <ProvideDefaultName>true</ProvideDefaultName>
 	  <!--Specifies whether or not the Location text box is enabled, disabled, or hidden for the project template.-->
 	  <LocationField>Enabled</LocationField>

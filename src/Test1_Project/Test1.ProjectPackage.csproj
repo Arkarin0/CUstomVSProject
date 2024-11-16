@@ -61,9 +61,9 @@
     <PackageReference Include="Microsoft.VSSDK.BuildTools" Version="17.9.3177" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Test1_ProjectTemplate\Test1_ProjectTemplate.csproj">
+    <ProjectReference Include="..\Test1_ProjectTemplate\Test1.ProjectTemplate.csproj">
       <Project>{ABA64935-D168-4EF8-8188-3B16FC76113E}</Project>
-      <Name>Test1_ProjectTemplate</Name>
+      <Name>Test1.ProjectTemplate</Name>
       <VSIXSubPath>ProjectTemplates</VSIXSubPath>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
