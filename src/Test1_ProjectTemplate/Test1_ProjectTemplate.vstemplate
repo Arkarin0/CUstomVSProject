@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Test1_ProjectTemplate</Name>
+    <Description>Test1_ProjectTemplate</Description>
+    <Icon>Test1_ProjectTemplate.ico</Icon>
+    <ProjectType>CSharp</ProjectType>
+    
+    <!--<RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>-->
+    <SortOrder>1000</SortOrder>
+    <TemplateID>0adfa974-0a59-4b28-ba8c-894089980cb2</TemplateID>
+	  <CreateInPlace>true</CreateInPlace>
+	  <CreateNewFolder>true</CreateNewFolder>
+
+	  <!--On the New Project Dialogbox-->
+    <DefaultName>Test1_ProjectTemplate</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+	  <!--Specifies whether or not the Location text box is enabled, disabled, or hidden for the project template.-->
+	  <LocationField>Enabled</LocationField>
+	  <!--Specifies whether the Browse button is available, so that users can easily modify the default directory where a new project is saved.-->
+	  <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+
+	  <LanguageTag>CSharp</LanguageTag>
+	  <LanguageTag>XAML</LanguageTag>
+	  <LanguageTag>WPF</LanguageTag>
+	  <PlatformTag>Android</PlatformTag>
+	  <PlatformTag>iOS</PlatformTag>
+	  <PlatformTag>Linux</PlatformTag>
+	  <PlatformTag>macOS</PlatformTag>
+	  <PlatformTag>Windows</PlatformTag>
+	  <ProjectTypeTag>Desktop</ProjectTypeTag>
+	  <ProjectTypeTag>Library</ProjectTypeTag>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="ProjectTemplate.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">Class1.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
