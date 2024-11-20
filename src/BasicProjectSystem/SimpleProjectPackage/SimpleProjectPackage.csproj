@@ -46,7 +46,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SimpleProjectPackagePackage.cs" />
+    <Compile Include="SimpleProjectFactory.cs" />
+    <Compile Include="SimpleProjectPackage.cs" />
     <Content Include="Templates\Projects\SimpleProject\AssemblyInfo.cs">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>

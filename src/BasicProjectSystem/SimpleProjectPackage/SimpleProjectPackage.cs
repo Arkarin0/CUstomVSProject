@@ -23,14 +23,19 @@ namespace SimpleProjectPackage
     /// To get loaded into VS, the package must be referred by &lt;Asset Type="Microsoft.VisualStudio.VsPackage" ...&gt; in .vsixmanifest file.
     /// </para>
     /// </remarks>
+    [ProvideProjectFactory(typeof(SimpleProjectFactory), "Simple Project",
+    "Simple Project Files (*.myproj);*.myproj", "myproj", "myproj",
+    @"Templates\Projects\SimpleProject", LanguageVsTemplate = "SimpleProject")]
     [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]
-    [Guid(SimpleProjectPackagePackage.PackageGuidString)]
-    public sealed class SimpleProjectPackagePackage : AsyncPackage
+    [Guid(SimpleProjectPackage.PackageGuidString)]
+    public sealed class SimpleProjectPackage : AsyncPackage
     {
         /// <summary>
         /// SimpleProjectPackagePackage GUID string.
         /// </summary>
         public const string PackageGuidString = "400cf88b-abd7-4271-988b-78c32cc16570";
+
+        public const string SimpleProjectFactoryString = "471EC4BB-E47E-4229-A789-D1F5F83B52D4";
 
         #region Package Members
 
