@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.Shell;
+﻿using Microsoft.VisualStudio.Project;
+using Microsoft.VisualStudio.Shell;
 using System;
 using System.Runtime.InteropServices;
 using System.Threading;
@@ -28,7 +29,7 @@ namespace SimpleProjectPackage
     @"Templates\Projects\SimpleProject", LanguageVsTemplate = "SimpleProject")]
     [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]
     [Guid(SimpleProjectPackage.PackageGuidString)]
-    public sealed class SimpleProjectPackage : AsyncPackage
+    public sealed class SimpleProjectPackage : ProjectPackage
     {
         /// <summary>
         /// SimpleProjectPackagePackage GUID string.
@@ -36,6 +37,8 @@ namespace SimpleProjectPackage
         public const string PackageGuidString = "400cf88b-abd7-4271-988b-78c32cc16570";
 
         public const string SimpleProjectFactoryString = "471EC4BB-E47E-4229-A789-D1F5F83B52D4";
+
+        public override string ProductUserContext => "";
 
         #region Package Members
 
@@ -51,6 +54,7 @@ namespace SimpleProjectPackage
             // When initialized asynchronously, the current thread may be a background thread at this point.
             // Do any initialization that requires the UI thread after switching to the UI thread.
             await this.JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);
+            this.RegisterProjectFactory(new SimpleProjectFactory(this));
         }
 
         #endregion
