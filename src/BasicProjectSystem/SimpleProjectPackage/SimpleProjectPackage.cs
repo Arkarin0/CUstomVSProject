@@ -37,6 +37,7 @@ namespace SimpleProjectPackage
         public const string PackageGuidString = "400cf88b-abd7-4271-988b-78c32cc16570";
 
         public const string SimpleProjectFactoryString = "471EC4BB-E47E-4229-A789-D1F5F83B52D4";
+        public static readonly Guid SimpleProjectFactoryGuid = Guid.Parse(SimpleProjectFactoryString);
 
         public override string ProductUserContext => "";
 
