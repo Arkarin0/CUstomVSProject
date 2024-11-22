@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
@@ -45,6 +46,14 @@ namespace SimpleProjectPackage
         public override void AddFileFromTemplate(string source, string target)
         {
             base.AddFileFromTemplate(source, target);
+
+            string @namespace = this.FileTemplateProcessor.GetFileNamespace(target, this);
+            string classname = Path.GetFileNameWithoutExtension(target);
+
+            this.FileTemplateProcessor.AddReplace("$nameSpace$", @namespace);
+            this.FileTemplateProcessor.AddReplace("$className$", classname);
+
+
             this.FileTemplateProcessor.UntokenFile(source, target);
             this.FileTemplateProcessor.Reset();
         }
