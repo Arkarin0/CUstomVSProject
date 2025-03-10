@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build"
+    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup>
+        <Compile Include="$(ProjectBasePath)\*.cs">
+            <Link>ProjectBase\blabla</Link>
+            <Visible>true</Visible>
+        </Compile>
+        <EmbeddedResource Include="$(ProjectBasePath)\VisualStudio.Project.resx">
+            <Link>ProjectBase\VisualStudio.Project.resx</Link>
+            <DependentUpon>VisualStudio.Project.cs</DependentUpon>
+        </EmbeddedResource>
+
+        <Compile Include="$(ProjectBasePath)\Automation\*.cs">
+            <Link>ProjectBase\Automation\blabla</Link>
+            <Visible>true</Visible>
+        </Compile>
+
+
+        <Compile Include="$(ProjectBasePath)\Automation\VSProject\*.cs">
+            <Link>ProjectBase\Automation\VSProject\blabla</Link>
+            <Visible>true</Visible>
+        </Compile>
+
+        <!-- <None Include="$(ProjectBasePath)\Diagrams\**.*">
+            <Link>ProjectBase\Diagrams\blabla</Link>
+            <Visible>true</Visible>
+        </None> -->
+
+        <!-- <None Include="$(ProjectBasePath)\Resources\**.*">
+            <Link>ProjectBase\Resources\blabla</Link>
+            <Visible>true</Visible>
+        </None> -->
+    </ItemGroup>
+</Project>
